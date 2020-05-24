@@ -1,0 +1,29 @@
+:root {
+    --bg-dark: #1B1B1B;
+    --bg-dark-2: #1A202C;
+    --bg-light: #282C34;
+    --text-muted: #718096;
+    --text-white: #EFFBEC;
+    --react-blue: #61dafb;
+    /** Fonts */
+    --font: "Roboto", sans-serif;
+    --font-alt: "Montserrat", sans-serif;
+    --font-console: "Consolas", sans-serif;
+    --font-console-2: "Inconsolata", sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* Components */
+/* ============== */
+
+/* Modules */
+/* ============ */
+@import "modules/icons.css";
+
+/* Tools */
+/* ============ */
+@import "tools/reset.css";
+@import "tools/typography.css";
