@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light);
+    padding: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2965F1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--react-blue);
+}

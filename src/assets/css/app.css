@@ -2,9 +2,15 @@
     --bg-dark: #1B1B1B;
     --bg-dark-2: #1A202C;
     --bg-light: #282C34;
+    /** color */
     --text-muted: #718096;
     --text-white: #EFFBEC;
     --react-blue: #61dafb;
+    --html: #E34F26;
+    --css: #2965F1;
+    --js: #F7DF1E;
+    --php: #8892BE;
+    --preact: #673AB8;
     /** Fonts */
     --font: "Roboto", sans-serif;
     --font-alt: "Montserrat", sans-serif;
@@ -13,7 +19,15 @@
 }
 
 body {
+    box-sizing: border-box;
     font-size: 16px;
+}
+
+:global(.App) {
+    background: var(--bg-dark);
+    box-sizing: border-box;
+    padding: 2rem;
+    overflow: hidden;
 }
 
 /* Components */
@@ -22,6 +36,7 @@ body {
 /* Modules */
 /* ============ */
 @import "modules/icons.css";
+@import "modules/scrollbar.css";
 
 /* Tools */
 /* ============ */

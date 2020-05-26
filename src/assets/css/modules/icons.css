@@ -2,3 +2,15 @@
     width: 45px;
     height: 16px;
 }
+
+:global(.face) {
+    width: 338px;
+    height: 381px;
+}
+
+@media (min-width: 1440px) {
+    :global(.face) {
+        width: 438px;
+        height: 481px;
+    }
+}

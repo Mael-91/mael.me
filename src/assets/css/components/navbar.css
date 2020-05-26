@@ -1,0 +1,43 @@
+.navbar {
+    position: relative;
+    color: var(--text-white);
+    font-family: var(--font-console);
+    z-index: 10;
+}
+.navbar_brand img {
+    position: absolute;
+    width: 2rem;
+    margin: 0;
+}
+
+.navbar .navbar_nav {
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+
+.navbar_nav li {
+    display: inline-block;
+    padding: 0 22px;
+}
+
+.navbar_nav .nav_item:hover, .navbar_nav .nav_item:focus {
+    color: var(--react-blue);
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar_brand img {
+        position: absolute;
+        width: 2rem;
+        margin: 0 35px;
+    }
+
+    .navbar .navbar_nav {
+        position: absolute;
+        right: 0;
+        padding: 0 35px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+}
