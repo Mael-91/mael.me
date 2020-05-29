@@ -1,19 +1,28 @@
 .navbar {
     position: relative;
-    color: var(--text-white);
     font-family: var(--font-console);
     z-index: 10;
 }
+
 .navbar_brand img {
     position: absolute;
     width: 2rem;
     margin: 0;
 }
 
+.navbar button, .navbar button:focus{
+    position: fixed;
+    right: 0;
+    padding: 0 2rem 0 0;
+    outline: none;
+    z-index: 40;
+}
+
 .navbar .navbar_nav {
     position: absolute;
     right: 0;
     padding: 0;
+    display: none;
 }
 
 .navbar_nav li {
@@ -21,23 +30,69 @@
     padding: 0 22px;
 }
 
-.navbar_nav .nav_item:hover, .navbar_nav .nav_item:focus {
+.navbar_nav li:last-child {
+    padding-right: 0;
+}
+
+.nav_item:hover, .nav_item:focus {
     color: var(--react-blue);
+}
+
+.m_nav_active.mobile_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1rem 1rem 0;
+    border: 1px solid;
+    border-radius: .5rem;
+    background: var(--bg-dark);
+    animation: fadeIn .3s both;
+    z-index: 30;
+}
+
+.mobile_nav li {
+    margin: 1rem 0;
+    padding-bottom: .25rem;
+}
+
+.mobile_nav a:hover, .mobile_nav a:focus {
+    color: var(--react-blue);
+    outline: none;
+}
+
+.mobile_nav .nav_item {
+    font-size: 1.25rem;
+    color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
     .navbar_brand img {
         position: absolute;
         width: 2rem;
-        margin: 0 35px;
     }
 
     .navbar .navbar_nav {
         position: absolute;
         right: 0;
-        padding: 0 35px;
     }
 }
 
 @media only screen and (min-width: 576px) {
+    .navbar .navbar_nav {
+        display: block;
+    }
+
+    .navbar button {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

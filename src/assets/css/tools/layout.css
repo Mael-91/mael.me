@@ -1,0 +1,11 @@
+:global(.grid) {
+    display: block;
+}
+
+@media only screen and (min-width: 835px) {
+    :global(.grid) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+        padding-right: 2rem;
+    }
+}

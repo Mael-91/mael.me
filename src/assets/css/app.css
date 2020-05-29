@@ -3,6 +3,7 @@
     --bg-dark-2: #1A202C;
     --bg-light: #282C34;
     /** color */
+    --contrast: #2965F1;
     --text-muted: #718096;
     --text-white: #EFFBEC;
     --react-blue: #61dafb;
@@ -19,15 +20,17 @@
 }
 
 body {
-    box-sizing: border-box;
     font-size: 16px;
+    background: var(--bg-dark);
 }
 
 :global(.App) {
-    background: var(--bg-dark);
-    box-sizing: border-box;
     padding: 2rem;
     overflow: hidden;
+}
+
+::selection {
+    color: var(--contrast);
 }
 
 /* Components */
@@ -35,10 +38,13 @@ body {
 
 /* Modules */
 /* ============ */
+@import "modules/hamburger.min.css";
 @import "modules/icons.css";
 @import "modules/scrollbar.css";
 
 /* Tools */
 /* ============ */
+@import "tools/animations.css";
+@import "tools/layout.css";
 @import "tools/reset.css";
 @import "tools/typography.css";

@@ -14,13 +14,6 @@ export const slideInRight = {
     easing: 'ease'
 }
 
-export const slideInBlock = {
-    origin: 'right',
-    duration: 700,
-    distance: '1500px',
-    easing: 'ease'
-}
-
 export const slideInLeft = {
     origin: 'left',
     duration: 1000,
@@ -29,10 +22,10 @@ export const slideInLeft = {
     easing: 'ease'
 }
 
-export const slideInLeftBrand = {
-    origin: 'left',
+export const slideFromBottom = {
+    origin: 'bottom',
     duration: 1000,
     delay: 150,
-    distance: '120px',
+    distance: '500px',
     easing: 'ease'
 }

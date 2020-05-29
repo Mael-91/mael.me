@@ -2,8 +2,8 @@ import React, {Component} from "react"
 import brand from "../assets/images/icon-72x72.png"
 import githubLogo from "../assets/images/svg/github-logo.svg"
 const css = require('../assets/css/components/footer.css')
-import ScrollReveal from "scrollreveal";
-import {slideInBlock} from "../assets/js/libs/ScrollReveal";
+import {slideFromBottom} from "../assets/js/libs/ScrollReveal";
+import {RevealElements} from "../assets/js/functions/Animations";
 
 export default class Footer extends Component {
 
@@ -17,11 +17,11 @@ export default class Footer extends Component {
     componentDidMount() {
         const year = new Date().getFullYear()
         this.setState({cpYear: year})
-        ScrollReveal().reveal(this.refs.footer, slideInBlock)
+        RevealElements('[data-anim="footer"]', slideFromBottom)
     }
 
     render() {
-        return <div className={css.footer} ref="footer">
+        return <div className={css.footer} data-anim="footer">
             <div className={css.footer_block}>
                 <div className={css.footer_content}>
                    <div className={css.footer_site_name}>

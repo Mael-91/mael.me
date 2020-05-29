@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import "./assets/css/app.css"
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
+import Skills from "./components/Skills";
 
 export default class App extends Component {
 
@@ -11,6 +12,7 @@ export default class App extends Component {
         return <div className="App">
             <Navbar/>
             <LandingPage/>
+            <Skills/>
             <Footer/>
         </div>
     }

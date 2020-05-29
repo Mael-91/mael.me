@@ -8,6 +8,62 @@
     height: 381px;
 }
 
+:global(.icon-linux) {
+    width: 150px;
+    height: 150px;
+}
+
+:global(.icon-docker) {
+    width: 192px;
+    height: 133px;
+}
+
+:global(.icon-php) {
+    width: 154px;
+    height: 86px;
+}
+
+:global(.icon-css-html) {
+    width: 171px;
+    height: 81px;
+}
+
+:global(.img-js) {
+    width: 85px;
+    height: 85px;
+}
+
+:global(.icon-server) {
+    width: 72px;
+    height: 85px;
+    color: var(--text-white);
+}
+
+:global(.icon-git) {
+    width: 113px;
+    height: 113px;
+}
+
+:global(.icon-phpstorm) {
+    width: 84px;
+    height: 84px;
+}
+
+:global(.icon-debian) {
+    width: 78px;
+    height: 97px;
+}
+
+:global(.icon-travisci) {
+    width: 94px;
+    height: 93px;
+}
+
+:global(.icon-webstorm) {
+    width: 84px;
+    height: 84px;
+}
+
 @media (min-width: 1440px) {
     :global(.face) {
         width: 438px;

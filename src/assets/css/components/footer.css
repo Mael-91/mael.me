@@ -1,8 +1,6 @@
 .footer {
     padding: 96px 0;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    margin-bottom: -2rem;
+    margin: 32px -2rem -2rem;
     background: var(--bg-dark-2);
 }
 
@@ -76,6 +74,7 @@
 .footer_mention {
     margin-top: 40px;
     font-size: 14px;
+    text-align: center;
     color: var(--text-muted);
 }
 
