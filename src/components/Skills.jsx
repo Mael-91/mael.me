@@ -1,24 +1,40 @@
 import React from "react"
-import css from "../assets/css/components/skills.css"
+import css from "../assets/css/components/skills_technos.css"
 import linuxLogo from "../assets/images/svg/linux.svg"
 import dockerLogo from "../assets/images/svg/docker.svg"
 import phpLogo from "../assets/images/svg/php.svg"
 import csshtmlLogo from "../assets/images/svg/css_html.svg";
 import jsLogo from "../assets/images/javascript.png";
 import serverLogo from "../assets/images/svg/server.svg";
-import {slideInLeft, slideInRight} from "../assets/js/libs/ScrollReveal";
+import {fadeIn, slideInLeft, slideInRight} from "../assets/js/libs/ScrollReveal";
 import {RevealElements} from "../assets/js/functions/Animations";
 
 export default class Skills extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.handleAnimations = this.handleAnimations.bind(this)
+    }
+
     componentDidMount() {
         this.handleAnimations()
+    }
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return this.props.screenSize !== nextProps.screenSize
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.screenSize !== prevProps.screenSize) {
+            this.handleAnimations()
+        }
     }
 
     render() {
         return <section className={css.skills_section}>
             <div className={css.skills_block}>
                 <h1 className="text-center" id="skills">Skills</h1>
+                <h5 className="text-center">What I can do</h5>
                 <div className="grid">
                     <div data-anim="skillsSlideLeft" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -80,11 +96,16 @@ export default class Skills extends React.Component {
     }
 
     handleAnimations() {
-        slideInLeft.duration = 700
-        slideInLeft.distance = '1500px'
-        RevealElements('[data-anim="skillsSlideLeft"]', slideInLeft)
-        slideInRight.duration = 700
-        slideInRight.distance = '1500px'
-        RevealElements('[data-anim="skillsSlideRight"]', slideInRight)
+        if (this.props.screenSize <= 1148) {
+            RevealElements('[data-anim="skillsSlideLeft"]', fadeIn)
+            RevealElements('[data-anim="skillsSlideRight"]', fadeIn)
+        } else {
+            slideInLeft.duration = 700
+            slideInLeft.distance = '1500px'
+            RevealElements('[data-anim="skillsSlideLeft"]', slideInLeft)
+            slideInRight.duration = 700
+            slideInRight.distance = '1500px'
+            RevealElements('[data-anim="skillsSlideRight"]', slideInRight)
+        }
     }
 }

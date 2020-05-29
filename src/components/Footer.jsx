@@ -1,11 +1,11 @@
-import React, {Component} from "react"
+import React from "react"
 import brand from "../assets/images/icon-72x72.png"
 import githubLogo from "../assets/images/svg/github-logo.svg"
 const css = require('../assets/css/components/footer.css')
 import {slideFromBottom} from "../assets/js/libs/ScrollReveal";
 import {RevealElements} from "../assets/js/functions/Animations";
 
-export default class Footer extends Component {
+export default class Footer extends React.Component {
 
     constructor(props) {
         super(props);

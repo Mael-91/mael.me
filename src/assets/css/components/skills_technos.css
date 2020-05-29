@@ -1,0 +1,75 @@
+.bg_light {
+    margin: 0 -2rem -2rem;
+    background: var(--bg-dark-2);
+}
+
+.skills_section, .technologies_section {
+    position: relative;
+    max-width: 1440px;
+    padding: 0 0 96px;
+    margin: 0 auto;
+}
+
+.technologies_section {
+    padding: 10px 0 96px;
+}
+
+.skills_section h5, .technologies_section h5 {
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.skills_block h1, .technologies_block h1 {
+    font-size: 62px;
+}
+
+.skills_block_card, .technologies_block_card {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.skills_block_card_svg, .technologies_block_card_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+:global(.icon-github-mark) {
+    color: var(--text-white);
+}
+
+.skills_block_card h5, .technologies_block_card h5 {
+    max-width: 370px;
+    padding: 15px 0 10px;
+    font-weight: 600;
+}
+
+.skills_block_card p, .technologies_block_card p {
+    max-width: 370px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 1206px) {
+    .skills_block_card:nth-of-type(4),
+    .skills_block_card:nth-of-type(5),
+    .skills_block_card:nth-of-type(6),
+    .technologies_block_card:nth-of-type(4),
+    .technologies_block_card:nth-of-type(5),
+    .technologies_block_card:nth-of-type(6) {
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .skills_block_card, .technologies_block_card {
+        max-width: 370px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .skills_block h1, .technologies_block h1 {
+        font-size: 72px;
+    }
+}

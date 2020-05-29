@@ -1,11 +1,11 @@
-import React, {Component} from "react"
+import React from "react"
 import brand from "../assets/images/icon-72x72.png"
 const css = require('../assets/css/components/navbar.css')
 import menu from '../assets/css/modules/hamburger.min.css'
 import {slideInRight, slideInLeft} from '../assets/js/libs/ScrollReveal'
 import {RevealElements} from "../assets/js/functions/Animations";
 
-export default class Navbar extends Component {
+export default class Navbar extends React.Component {
 
     constructor(props) {
         super(props);
@@ -17,11 +17,7 @@ export default class Navbar extends Component {
     }
 
     componentDidMount() {
-        slideInLeft.distance = '120px'
-        RevealElements('[data-anim="navbar_brand"]', slideInLeft)
-        RevealElements('[data-anim="navbar_nav"]', slideInRight)
-        slideInRight.distance = '120px'
-        RevealElements('[data-anim="mobile_nav"]', slideInRight)
+        this.handleAnimation()
     }
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
@@ -36,7 +32,7 @@ export default class Navbar extends Component {
 
     render() {
         return <nav className={css.navbar}>
-            <a href="#" className={css.navbar_brand}><img src={brand} alt="mael-91.me navbar logo" data-anim="navbar_brand"/></a>
+            <a href="#" className={css.navbar_brand}><img src={brand} alt="mael-91.me logo" data-anim="navbar_brand"/></a>
             <ul className={css.navbar_nav} data-anim="navbar_nav" ref="nav">
                 <li><a href="#" className={css.nav_item}>Intro</a></li>
                 <li><a href="#skills" className={css.nav_item}>Skills</a></li>
@@ -54,6 +50,14 @@ export default class Navbar extends Component {
                 <ul ref="mobileNav"></ul>
             </div>
         </nav>
+    }
+
+    handleAnimation() {
+        slideInLeft.distance = '120px'
+        RevealElements('[data-anim="navbar_brand"]', slideInLeft)
+        RevealElements('[data-anim="navbar_nav"]', slideInRight)
+        slideInRight.distance = '120px'
+        RevealElements('[data-anim="mobile_nav"]', slideInRight)
     }
 
     handleIsActive() {

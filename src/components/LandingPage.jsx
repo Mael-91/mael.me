@@ -1,10 +1,10 @@
-import React, {Component} from "react"
+import React from "react"
 import css from '../assets/css/components/landing_page.css'
 import face from "../assets/images/svg/face.svg";
 import {fadeIn} from "../assets/js/libs/ScrollReveal";
 import {RevealElements} from "../assets/js/functions/Animations";
 
-export default class LandingPage extends Component {
+export default class LandingPage extends React.Component {
 
     componentDidMount() {
         RevealElements('[data-anim="LPFadeIn"]', fadeIn)

@@ -3,6 +3,11 @@
     height: 16px;
 }
 
+:global(.icon-github-mark) {
+    width: 94px;
+    height: 94px;
+}
+
 :global(.face) {
     width: 338px;
     height: 381px;
