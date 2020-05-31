@@ -69,6 +69,26 @@
     height: 84px;
 }
 
+:global(.icon-eye) {
+    width: 16px;
+    height: 16px;
+}
+
+:global(.icon-law) {
+    width: 14px;
+    height: 16px;
+}
+
+:global(.icon-repo) {
+    width: 12px;
+    height: 16px;
+}
+
+:global(.icon-repo-forked) {
+    width: 12px;
+    height: 19.25px;
+}
+
 @media (min-width: 1440px) {
     :global(.face) {
         width: 438px;

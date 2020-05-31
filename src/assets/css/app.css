@@ -3,6 +3,7 @@
     --bg-dark-2: #1A202C;
     --bg-light: #282C34;
     /** color */
+    --border: #d1d5da;
     --contrast: #2965F1;
     --text-muted: #718096;
     --text-white: #EFFBEC;
@@ -10,7 +11,7 @@
     --html: #E34F26;
     --css: #2965F1;
     --js: #F7DF1E;
-    --php: #8892BE;
+    --php: #4f5d95;
     --preact: #673AB8;
     /** Fonts */
     --font: "Roboto", sans-serif;

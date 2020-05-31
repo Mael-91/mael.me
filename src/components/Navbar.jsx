@@ -36,8 +36,8 @@ export default class Navbar extends React.Component {
             <ul className={css.navbar_nav} data-anim="navbar_nav" ref="nav">
                 <li><a href="#" className={css.nav_item}>Intro</a></li>
                 <li><a href="#skills" className={css.nav_item}>Skills</a></li>
-                <li><a href="#" className={css.nav_item}>Projects</a></li>
-                <li><a href="#" className={css.nav_item}>Works</a></li>
+                <li><a href="#technologies" className={css.nav_item}>Technologies</a></li>
+                <li><a href="#projects" className={css.nav_item}>Projects</a></li>
                 <li><a href="#" className={css.nav_item}>Contact</a></li>
             </ul>
             <button data-anim="mobile_nav" className={`${menu.hamburger} ${menu.hamburger_slider} 

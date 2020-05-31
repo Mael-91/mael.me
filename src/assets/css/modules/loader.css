@@ -1,0 +1,160 @@
+.loader_element > * {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.rainbow {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 8s ease infinite;
+}
+
+.loader {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loader_default {
+    border-radius: 50%;
+    border: 3px solid var(--php);
+}
+
+.loader_default:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--contrast);
+    animation: spin 1s linear infinite;
+}
+
+.loader_double {
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    animation: spin 1s linear infinite;
+}
+
+.loader_double:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    opacity: 0.6;
+    animation: spinReverse 2s linear infinite;
+}
+
+.loader_circles, .loader_circles_double {
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+}
+
+.loader_circles:after, .loader_circles:before, .loader_circles_double:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    opacity: 0.8;
+    animation: spin 5s linear infinite;
+}
+
+.loader_circles:before {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    opacity: 0.5;
+    animation-delay: 10s;
+}
+
+.loader_bars:before, .loader_bars:after, .loader_bars span {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 30px;
+    background: #fff;
+    animation: grow 1.5s linear infinite;
+}
+
+.loader_bars:after {
+    left: 10px;
+    animation-delay: .5s;
+}
+
+.loader_bars span {
+    left: 20px;
+    right: 0;
+    animation-delay: 1s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 25%;
+    }
+    100% {
+        background-position: 0 50%
+    }
+}

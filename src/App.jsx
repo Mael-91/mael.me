@@ -7,6 +7,7 @@ import LandingPage from "./components/LandingPage";
 import Skills from "./components/Skills";
 import Technologies from "./components/Technologies";
 import Debounce from "./assets/js/functions/DOMTimer";
+import Projects from "./components/Projects";
 
 export default class App extends Component {
 
@@ -38,6 +39,7 @@ export default class App extends Component {
             <LandingPage/>
             <Skills screenSize={this.state.screenSize}/>
             <Technologies screenSize={this.state.screenSize}/>
+            <Projects/>
             <Footer/>
         </div>
     }
