@@ -42,7 +42,6 @@ export default class Projects extends React.Component {
     }
 
     renderRepoCard() {
-        console.log(this.state.repo)
         return this.state.repo.map((repo) =>
             <li data-anim="repo_cards" key={repo.id}>
                 <div className={css.project_block_card} iscontrib={repo.fork.toString()}>
