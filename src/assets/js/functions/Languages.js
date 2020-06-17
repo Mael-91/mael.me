@@ -6,4 +6,5 @@ export const languages = [
     {name: 'Makefile', color: '#427819'},
     {name: 'TypeScript', color: '#2b7489'},
     {name: 'HTML', color: '#E34F26'},
+    {name: 'Go', color: '#00ADD8'}
 ]
