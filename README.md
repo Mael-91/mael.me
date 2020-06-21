@@ -1,8 +1,6 @@
 <h1 style="display: flex; justify-content: center" align="center">Mael-91.me</h1>
 
-<div align="center" style="display: flex; justify-content: center">
-    <img src="https://travis-ci.com/Mael-91/mael-91.me.svg?branch=master" alt="build travis"/>
-</div>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/71bb358c-b8b8-4f41-8e55-af30f23b918e/deploy-status)](https://app.netlify.com/sites/mael-91/deploys)
 
 ## License
 

@@ -108,7 +108,7 @@ export default class Projects extends React.Component {
 
     async getRepository() {
         this.setState({isLoading: !this.state.isLoading})
-        const response = await this.fetch('https://api.github.com/users/Mael-91/repos')
+        const response = await this.fetch('https://api.github.com/users/Mael-91/repos?sort=created')
         this.setState({repo: response, isLoading: !this.state.isLoading})
 
     }

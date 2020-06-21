@@ -40,7 +40,6 @@ module.exports = merge(common, {
                             modules: {
                                 localIdentName: '[hash:base64:5]',
                                 context: path.resolve(__dirname, 'src/assets/css'),
-                                hashPrefix: 'mael-91.me',
                             },
                             importLoaders: 1
                         }
