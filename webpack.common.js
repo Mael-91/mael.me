@@ -22,18 +22,6 @@ module.exports = {
             {
                 test: /\.svg$/i,
                 use: ["svg-sprite-loader"]
-            },
-            {
-                test: /\.worker\.js$/,
-                use: [
-                    {
-                        loader: "worker-loader",
-                        options: {
-                            fallback: false,
-                            inline: true
-                        }
-                    }
-                ]
             }
         ]
     },
