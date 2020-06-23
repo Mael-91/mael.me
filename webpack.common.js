@@ -30,9 +30,9 @@ module.exports = {
             template: './src/public/index.html',
         }),
         new WebpackPwaManifest({
-            name: "Mael-91.io - Portfolio",
-            short_name: "Mael-91.io",
-            description: "Mael's Portfolio",
+            name: "Portfolio | Mael Constantin",
+            short_name: "Portfolio | Mael Constantin",
+            description: "Mael Constantin's portfolio",
             theme_color: "#1B1B1B",
             background_color: "#1B1B1B",
             ios: true,

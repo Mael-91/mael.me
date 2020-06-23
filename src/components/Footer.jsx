@@ -30,9 +30,9 @@ export default class Footer extends React.Component {
                    </div>
                     <div className={css.footer_nav}>
                         <a href="#">Intro</a>
-                        <a href="#">Skills</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Works</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#technologies">Technologies</a>
+                        <a href="#projects">Projects</a>
                         <a href="#">Contact</a>
                     </div>
                     <div className={css.footer_social}>
