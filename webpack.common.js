@@ -3,10 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
-    entry: {
-        'app': './src/index.jsx',
-        'serviceWorker': './src/serviceWorker.js'
-    },
+    entry: './src/index.jsx',
     resolve: {
         extensions: ['.js', '.jsx', '.css', '.html']
     },

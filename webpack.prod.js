@@ -5,6 +5,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = merge(common, {
     mode: "production",
@@ -75,5 +77,11 @@ module.exports = merge(common, {
         new MiniCssExtractPlugin({
             filename: 'assets/css/[name].[contenthash].css'
         }),
+        new WorkboxWebpackPlugin.GenerateSW(),
+        new CopyPlugin({
+            patterns: [
+                'src/public/robot.txt'
+            ]
+        })
     ]
 })
