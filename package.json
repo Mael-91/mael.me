@@ -5,7 +5,7 @@
   "main": "src/index.jsx",
   "scripts": {
     "dev-server": "webpack-dev-server --mode development --open --hot --config webpack.dev.js --public 127.0.0.1:8080/src/public",
-    "build": "webpack --mode production --config webpack.prod.js"
+    "build": "PUBLIC_URL='' webpack --mode production --config webpack.prod.js"
   },
   "author": "Mael",
   "license": "MIT",
