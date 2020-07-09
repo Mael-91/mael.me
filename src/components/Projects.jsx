@@ -77,11 +77,14 @@ export default class Projects extends React.Component {
                         </div>
                         <p className={css.card_description}>{repo.description}</p>
                         <p className={css.card_languages}>
-                        <span>
-                            <span className={css.language_color} style={this.renderLanguageColor(repo.language)}/>
-                            <span className={css.language_name}>{repo.language}</span>
-                        </span>
-                            <span className={css.repo_license}>
+                        {
+                            repo.language &&
+                            <span>
+                                <span className={css.language_color} style={this.renderLanguageColor(repo.language)}/>
+                                <span className={css.language_name}>{repo.language}</span>
+                            </span>
+                        }
+                        <span className={css.repo_license}>
                             <svg viewBox={lawLogo.viewBox} className="icon-law">
                                 <use xlinkHref={'#' + lawLogo.id}/>
                             </svg>
@@ -108,20 +111,8 @@ export default class Projects extends React.Component {
 
     async getRepository() {
         this.setState({isLoading: !this.state.isLoading})
-        const response = await this.fetch('https://api.github.com/users/Mael-91/repos?sort=created')
+        const request = await fetch('https://api.github.com/users/Mael-91/repos?sort=created')
+        const response = await request.json()
         this.setState({repo: response, isLoading: !this.state.isLoading})
-
-    }
-
-    async fetch(url, params) {
-        params = Object.assign({
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            method: 'GET'
-        }, params)
-        const response = await fetch(url, params)
-        return await response.json()
     }
 }
