@@ -31,7 +31,7 @@ module.exports = merge(common, {
                         options: {
                             modules: {
                                 localIdentName: '[path][name]__[local]-[hash:base64:5]',
-                                context: path.resolve(__dirname, 'src/assets/css'),
+                                localIdentContext: path.resolve(__dirname, 'src/assets/css'),
                             }
                         }
                     }
