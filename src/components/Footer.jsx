@@ -30,10 +30,10 @@ export default class Footer extends React.Component {
                    </div>
                     <div className={css.footer_nav}>
                         <a href="#">Intro</a>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills">Compétences</a>
                         <a href="#technologies">Technologies</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#projects">Projets</a>
+                        <a href="#">Contacter</a>
                     </div>
                     <div className={css.footer_social}>
                         <a href="https://github.com/Mael-91">
@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
                             </svg>
                         </a>
                     </div>
-                    <p className={css.footer_mention}>© Copyright {this.state.cpYear}, Mael-91.me. All Right Reserved</p>
+                    <p className={css.footer_mention}>© Copyright {this.state.cpYear}, portfolio.mael-91.me. All Right Reserved</p>
                 </div>
             </div>
         </div>
