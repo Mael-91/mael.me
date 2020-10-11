@@ -16,7 +16,8 @@ export default class Projects extends React.Component {
         super(props);
         this.state = {
             repo: [],
-            isLoading: false
+            isLoading: false,
+            repoID: [296965211, 296965004, 280388702, 278080130, 276194602, 266626913, 265246149, 265201825, 264166089, 263693099, 251117693]
         }
     }
 
@@ -28,7 +29,7 @@ export default class Projects extends React.Component {
     render() {
         return <section className={css.projects_section}>
             <div className={css.projects_block}>
-                <h1 className="text-center" id="projects">Projects</h1>
+                <h1 className="text-center" id="projects">Projets</h1>
                 <div className={css.project_block_cards}>
                     {
                         this.state.isLoading ? <div style={{display: 'flex', justifyContent: 'center'}}><LoaderComponent/></div> : null
@@ -110,9 +111,23 @@ export default class Projects extends React.Component {
     }
 
     async getRepository() {
+        let repo = [];
         this.setState({isLoading: !this.state.isLoading})
         const request = await fetch('https://api.github.com/users/Mael-91/repos?sort=created')
         const response = await request.json()
-        this.setState({repo: response, isLoading: !this.state.isLoading})
+        for (let i = 0; i < response.length; i++) {
+            this.state.repoID.forEach(id => {
+                if (response[i].id === id) {
+                    repo.push(response[i])
+                }
+            })
+        }
+        this.setState({repo: repo, isLoading: !this.state.isLoading})
+    }
+
+    async getRepoID() {
+        const request = await fetch('https://api.portfolio.mael-91.me/repo')
+        const response = await request.json()
+        this.setState({repoID: response})
     }
 }

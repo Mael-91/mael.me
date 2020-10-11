@@ -8,13 +8,13 @@ export default class LandingPage extends React.Component {
         return <div className={css.landing_page}>
             <div className={css.landing_page_intro}>
                 <h1 className="text-center">Mael-91</h1>
-                <h5 className="text-center">Young beginner in the world of web development</h5>
+                <h5 className="text-center">Jeune débutant dans le monde du développement</h5>
                 <p >
-                    It all started during the year 2019, where I focused more on web development, I started with <span>HTML</span>,
-                    <span>CSS</span> and <span>JavaScript</span> then I moved to back-end development to learn <span>PHP</span>,
-                    since then I work a lot on personal projects to put my skills into practice and use frameworks (such as Symfony).<br/><br/>
-                    Since 2020, having a good base in <span>JavaScript</span>, I've oriented myself towards front-end
-                    frameworks (<span>React</span>, <span>preact</span> currently).
+                    Tout a commencé au cours de l'année 2019, où je me suis davantage concentré sur le développement web, j'ai commencé avec <span>HTML</span>,
+                    <span>CSS</span> et <span>JavaScript</span> puis je suis passé au développement back-end pour apprendre <span>PHP</span>,
+                    depuis je travaille beaucoup^sur des projets personnels pour mettre mes compétences en pratique et utiliser des framework (tels que Symfony).<br/><br/>
+                    Depuis 2020, ayant de bonne base en <span>JavaScript</span>, je me suis orienté vers les
+                    frameworks front-end (<span>React</span>, <span>preact</span> actuellement).
                 </p>
             </div>
             <div className={css.landing_page_face}>

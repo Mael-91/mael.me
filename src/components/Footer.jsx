@@ -25,15 +25,15 @@ export default class Footer extends React.Component {
             <div className={css.footer_block}>
                 <div className={css.footer_content}>
                    <div className={css.footer_site_name}>
-                       <img src={brand} alt="logo Mael.me"/>
-                       <h5>Mael-91.me</h5>
+                       <img src={brand} alt="logo Mael Constantin"/>
+                       <h5>Mael Constantin</h5>
                    </div>
                     <div className={css.footer_nav}>
                         <a href="#">Intro</a>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills">Compétences</a>
                         <a href="#technologies">Technologies</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#projects">Projets</a>
+                        <a href="#">Contacter</a>
                     </div>
                     <div className={css.footer_social}>
                         <a href="https://github.com/Mael-91">
@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
                             </svg>
                         </a>
                     </div>
-                    <p className={css.footer_mention}>© Copyright {this.state.cpYear}, Mael-91.me. All Right Reserved</p>
+                    <p className={css.footer_mention}>© Copyright {this.state.cpYear}, portfolio.mael-91.me. All Right Reserved</p>
                 </div>
             </div>
         </div>
