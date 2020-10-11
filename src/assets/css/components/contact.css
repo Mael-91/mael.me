@@ -52,6 +52,14 @@
     color: #673AB8;
 }
 
+.contact .contact_block form span.error {
+    color: red;
+}
+
+.contact .contact_block form span.success {
+    color: red;
+}
+
 @media (max-width: 420px) {
     .contact .contact_block h1 {
         font-size: 44px;
