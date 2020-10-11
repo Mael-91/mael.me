@@ -80,7 +80,7 @@ export default class Contact extends React.Component {
             method: 'POST',
             body: data
         }
-        const request = await fetch("http://contact-api.mael-91.me/contact", params)
+        const request = await fetch("https://contact-api.mael-91.me/contact", params)
         const response = await request.json()
         if (response.Code === 200) {
             this.setState({
