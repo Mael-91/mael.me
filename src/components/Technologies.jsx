@@ -34,7 +34,7 @@ export default class Technologies extends React.Component {
         return <div className={css.bg_light}>
             <div className={css.technologies_section}>
                 <h1 className="text-center" id="technologies">Technologies</h1>
-                <h5 className="text-center">The tools I use</h5>
+                <h5 className="text-center">Les outils que j'utilise</h5>
                 <div className={`grid`}>
                     <div className={css.technologies_block_card} data-anim="techFromLeft">
                         <div className={css.technologies_block_card_svg}>
@@ -43,7 +43,7 @@ export default class Technologies extends React.Component {
                             </svg>
                         </div>
                         <h5 className="text-center">Git</h5>
-                        <p className="text-center">To manage the versions of my projects</p>
+                        <p className="text-center">Pour gérer le versioning de mes projets.</p>
                     </div>
                     <div className={css.technologies_block_card} data-anim="techFadeIn">
                         <div className={css.technologies_block_card_svg}>
@@ -53,8 +53,7 @@ export default class Technologies extends React.Component {
                         </div>
                         <h5 className="text-center">Github</h5>
                         <p className="text-center">
-                            This is the site where my open source projects are available,
-                            I also host my private projects there.
+                            C'est le site sur lequel mes projets open source sont disponible, j'y héberge également mes projets privés.
                         </p>
                     </div>
                     <div className={css.technologies_block_card} data-anim="techFromRight">
@@ -65,8 +64,7 @@ export default class Technologies extends React.Component {
                         </div>
                         <h5 className="text-center">PHPStorm</h5>
                         <p className="text-center">
-                            I use PHPStorm for all my projects when they use PHP as a server language,
-                            it also allows me to develop in JavaScript, HTML, CSS, ...
+                            J'utilise les différents logiciels fournit par JetBrains en fonction de mes besoin, des langages utilisés.
                         </p>
                     </div>
                     <div className={css.technologies_block_card} data-anim="techFromLeft">
@@ -77,7 +75,7 @@ export default class Technologies extends React.Component {
                         </div>
                         <h5 className="text-center">Debian</h5>
                         <p className="text-center">
-                            The debian distribution is the one I use whenever I need a docker environment for projects using databases, php, ...
+                            La distribution Debian est celle que j'utilise chaque fois que j'ai besoin d'un environnement sous Docker, pour les bases de données, php, ...
                         </p>
                     </div>
                     <div className={css.technologies_block_card} data-anim="techFadeIn">
@@ -88,8 +86,8 @@ export default class Technologies extends React.Component {
                         </div>
                         <h5 className="text-center">Travis CI</h5>
                         <p className="text-center">
-                            This tool allows me to automate tasks<br/> (e.g.: unit tests, static site deployment on Github page,
-                            release of versions for NPM packages, ...).
+                            Cet outils me permet d'automatiser les tâches<br/> (e.g.: tests unitaires, déploiement de site statique sur GitHub Page,
+                            publication de version pour les packages NPM, ...).
                         </p>
                     </div>
                     <div className={css.technologies_block_card} data-anim="techFromRight">
@@ -100,7 +98,7 @@ export default class Technologies extends React.Component {
                         </div>
                         <h5 className="text-center">WebStorm</h5>
                         <p className="text-center">
-                            I use WebStorm when I work on projects using exclusively JavaScript, html, css, such as static sites (like this one)
+                            J'utilise Webstorm lorsque je travail sur des projets utilisant exclusivement JavaScript, HTML, CSS tels que les sites statiques (comme celui-ci).
                         </p>
                     </div>
                 </div>
