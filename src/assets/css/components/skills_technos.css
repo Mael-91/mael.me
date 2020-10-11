@@ -73,3 +73,9 @@
         font-size: 72px;
     }
 }
+
+@media (max-width: 497px) {
+    .skills_block h1, .technologies_block h1 {
+        font-size: 40px;
+    }
+}

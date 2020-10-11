@@ -57,12 +57,12 @@
 }
 
 .contact .contact_block form span.success {
-    color: red;
+    color: green;
 }
 
 @media (max-width: 420px) {
     .contact .contact_block h1 {
-        font-size: 44px;
+        font-size: 40px!important;
     }
 }
 
