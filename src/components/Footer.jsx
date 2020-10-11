@@ -25,8 +25,8 @@ export default class Footer extends React.Component {
             <div className={css.footer_block}>
                 <div className={css.footer_content}>
                    <div className={css.footer_site_name}>
-                       <img src={brand} alt="logo Mael.me"/>
-                       <h5>Mael-91.me</h5>
+                       <img src={brand} alt="logo Mael Constantin"/>
+                       <h5>Mael Constantin</h5>
                    </div>
                     <div className={css.footer_nav}>
                         <a href="#">Intro</a>

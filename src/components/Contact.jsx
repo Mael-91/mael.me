@@ -81,6 +81,7 @@ export default class Contact extends React.Component {
                 Email: this.state.email,
                 Subject: this.state.subject,
                 Message: this.state.message,
+                ReCaptcha: "null"
             })
         }
         const request = await fetch("https://contact-api.mael-91.me/contact", params)
