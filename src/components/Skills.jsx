@@ -33,8 +33,8 @@ export default class Skills extends React.Component {
     render() {
         return <section className={css.skills_section}>
             <div className={css.skills_block}>
-                <h1 className="text-center" id="skills">Skills</h1>
-                <h5 className="text-center">What I can do</h5>
+                <h1 className="text-center" id="skills">Compétences</h1>
+                <h5 className="text-center">Ce que je sais faire</h5>
                 <div className="grid">
                     <div data-anim="skillsSlideLeft" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -43,7 +43,7 @@ export default class Skills extends React.Component {
                             </svg>
                         </div>
                         <h5 className="text-center">Linux</h5>
-                        <p className="text-center">Creation, management and installation of the Linux distrubition</p>
+                        <p className="text-center">Création, gestion et installation de machine sous Linux.</p>
                     </div>
                     <div data-anim="skillsSlideLeft" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -52,7 +52,7 @@ export default class Skills extends React.Component {
                             </svg>
                         </div>
                         <h5 className="text-center">Docker</h5>
-                        <p className="text-center">Deploy servers running on Dock containers</p>
+                        <p className="text-center">Déployer des environnements sous Docker.</p>
                     </div>
                     <div data-anim="skillsSlideLeft" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -61,7 +61,7 @@ export default class Skills extends React.Component {
                             </svg>
                         </div>
                         <h5 className="text-center">PHP</h5>
-                        <p className="text-center">Development, maintenance under Symfony. REST API creation via API Platform</p>
+                        <p className="text-center">Développement sous Symfony, maintenance, création d'API REST via API Platform.</p>
                     </div>
                     <div data-anim="skillsSlideRight" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -70,7 +70,7 @@ export default class Skills extends React.Component {
                             </svg>
                         </div>
                         <h5 className="text-center">CSS</h5>
-                        <p className="text-center">Front end development and design integration</p>
+                        <p className="text-center">Développement et intégration de design front-end.</p>
                     </div>
                     <div data-anim="skillsSlideRight" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -79,7 +79,7 @@ export default class Skills extends React.Component {
                             </div>
                         </div>
                         <h5 className="text-center">JavaScript & Framework</h5>
-                        <p className="text-center">Web App development and maintenance, real time and many other things</p>
+                        <p className="text-center">Développement et maintenance de Wep App, temps réel et plein d'autres choses.</p>
                     </div>
                     <div data-anim="skillsSlideRight" className={css.skills_block_card}>
                         <div className={css.skills_block_card_svg}>
@@ -88,7 +88,7 @@ export default class Skills extends React.Component {
                             </svg>
                         </div>
                         <h5 className="text-center">Linux Server</h5>
-                        <p className="text-center">Installation, maintenance and management of services / tools for web servers</p>
+                        <p className="text-center">Installation, gestion de services / outils pour les serveurs WEB.</p>
                     </div>
                 </div>
             </div>
