@@ -75,7 +75,7 @@ export default class Contact extends React.Component {
                 'Accept': 'application/x-www-form-urlencoded'
             },
             method: 'POST',
-            body: JSON.stringify({
+            body: new FormData({
                 Firstname: this.state.firstname,
                 Lastname: this.state.lastname,
                 Email: this.state.email,
