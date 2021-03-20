@@ -21,10 +21,6 @@ module.exports = merge(common, {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: true,
-                            reloadAll: true
-                        }
                     },
                     {
                         loader: 'css-loader',

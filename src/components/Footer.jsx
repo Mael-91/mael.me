@@ -1,7 +1,7 @@
 import React from "react"
 import brand from "../assets/images/icon-72x72.png"
 import githubLogo from "../assets/images/svg/github-logo.svg"
-const css = require('../assets/css/components/footer.css')
+import css from '../assets/css/components/footer.css'
 import {slideFromBottom} from "../assets/js/libs/ScrollReveal";
 import {RevealElements} from "../assets/js/functions/Animations";
 
