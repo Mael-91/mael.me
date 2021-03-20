@@ -1,6 +1,6 @@
 import React from "react"
 import brand from "../assets/images/icon-72x72.png"
-const css = require('../assets/css/components/navbar.css')
+import css from '../assets/css/components/navbar.css'
 import menu from '../assets/css/modules/hamburger.min.css'
 import {slideInRight, slideInLeft} from '../assets/js/libs/ScrollReveal'
 import {RevealElements} from "../assets/js/functions/Animations";
