@@ -10,7 +10,7 @@
   "author": "Mael",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.14.0",
+    "react": "^17.0.2",
     "react-dom": "^16.13.1",
     "scrollreveal": "^4.0.9"
   },
